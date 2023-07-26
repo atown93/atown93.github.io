@@ -1,0 +1,47 @@
+<style>
+  .line-before-after {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .line-before,
+  .line-after {
+    width: 3px;
+  }
+
+  .line-before {
+    height: 60px;
+    margin-bottom: 10px;
+    background: linear-gradient(to top, rgba(113, 207, 37, 1), rgba(0, 0, 0, 1));
+  }
+
+  .line-after {
+    height: 60px;
+    margin-top: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(113, 207, 37, 1)); /* Update the gradient colors to go from black to green */
+  }
+
+  .text-between-lines {
+    font-size: 30px;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+
+</head>
+<body>
+  <section aria-labelledby="feature-five" class="bg-black">
+    <br><br>
+    <div class="w-xl px-2 my-8 lg:my-16 mx-auto md:px-8 lg:px-1 xl:px-32 2xl:max-w-7xl py-8 lg:py-3 text-center">
+      <div class="line-before-after">
+        <div class="line-before"></div>
+        <h2 class="text-between-lines">The setup process options</h2>
+        <div class="line-after"></div>
+    </div>
+  </section>
+</body>
+</html>

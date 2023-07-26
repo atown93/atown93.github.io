@@ -1,0 +1,161 @@
+<!DOCTYPE html></Fragment>
+<html>
+<head>
+  <style>
+    .logo {
+      width: 80px;
+      height: auto;
+    }
+    .bg-black {
+      background-color: black;
+    }
+    .text-white {
+      color: white;
+    }
+    .gradient-green {
+      background: linear-gradient(174deg, rgba(113,207,37,1) 0%, rgba(138,255,55,1) 73%, rgba(171,255,102,1) 100%);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+    .gradient-green:hover {
+      background-position: right center;
+    }
+    .nav-heading {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .nav-item-bold {
+      font-weight: bold;
+    }
+    .nav-item-underlined {
+      text-decoration: underline;
+    }
+    .nav-item:hover .nav-dropdown-item,
+    .nav-item:hover ~ .absolute .nav-dropdown-item {
+      color: white;
+    }
+
+    .nav-item:hover {
+      background-color: #3e4a61;
+    }
+
+    .nav-dropdown-item:hover {
+      background-color: #d9dad7;
+    }
+  </style>
+</head>
+<body>
+  <section class="bg-black">
+    <nav>
+      <div class="flex py-6 px-4 md:px-14 items-center">
+        <a class="inline-block text-2xl font-bold" href="#">
+          <img class="h-10 w-auto" src="/images/placeholders/ezoic-dark.png" alt="ezoic">
+        </a>
+ 
+        
+        <div class="hidden lg:flex items-center ml-auto">
+          <div class="mr-12">
+            <ul class="hidden xl:flex items-center">
+              <li class="relative group mr-16">
+                <button class="inline-block text-left text-base font-medium text-white">
+                  <div class="flex items-center">
+                    <span class="mr-3">Products</span>
+                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.332 0.999974L10.3887 0.0566406L6.66536 3.77997L5.9987 4.5L5.33203 3.77997L1.6087 0.0566402L0.665365 0.999974L5.9987 6.33331L11.332 0.999974Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </button>
+                <div class="hidden group-hover:block absolute z-20 bottom-0 left-0 w-52 pt-4 transform translate-y-full">
+                  <div class="py-4 px-6 bg-white rounded-lg border-2 border-blueGray-900">
+                    <a class="block mb-2 text-xs" href="https://www.ezoic.com/products/">Ezoic Products</a>
+                  </div>
+                </div>
+              </li>
+            
+
+
+                
+              <li class="relative group">
+                <button class="inline-block text-left text-base font-medium text-white">
+                  <div class="flex items-center">
+                    <span class="mr-3">Resources</span>
+                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.332 0.999974L10.3887 0.0566406L6.66536 3.77997L5.9987 4.5L5.33203 3.77997L1.6087 0.0566402L0.665365 0.999974L5.9987 6.33331L11.332 0.999974Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </button>
+                <div class="hidden group-hover:block absolute z-20 bottom-0 left-0 w-52 pt-4 transform translate-y-full">
+                  <div class="py-4 px-6 bg-white rounded-lg border-2 border-blueGray-900">
+                    <div class="grid grid-cols-2 gap-4">
+                      <div>
+                        <h3 class="nav-heading text-sm font-medium text-gray-900">Help</h3>
+                        <a class="block mb-2 text-xs nav-dropdown-item" href="https://adrevenueindex.ezoic.com/">Ad Revenue Index</a>
+                        <a class="block mb-2 text-xs nav-dropdown-item" href="https://www.ezoic.com/faq/">FAQs</a>
+                        <a class="block mb-2 text-xs nav-dropdown-item" href="https://support.ezoic.com/">Support</a>
+                      </div>
+                      <div>
+                        <h3 class="nav-heading text-sm font-medium text-gray-900">Technical</h3>
+                        <a class="block mb-2 text-xs nav-dropdown-item" href="https://ezoicstatus.com/">Status</a>
+                        <a class="block text-xs nav-dropdown-item" href="https://wordpress.ezoic.com/">WordPress</a>
+                      </div>
+                      <div>
+                        <h3 class="nav-heading text-sm font-medium text-gray-900">Learning</h3>
+                        <a class="block mb-2 text-xs nav-dropdown-item" href="https://www.ezoic.com/blogs/">Blogs</a>
+                        <a class="block mb-2 text-xs nav-dropdown-item" href="https://www.ezoic.com/case-studies/">Ezoic Case Studies</a>
+                        <a class="block mb-2 text-xs nav-dropdown-item" href="https://www.publisherlab.org/">Publisher Lab</a>
+                      </div>
+                      <div>
+                        <h3 class="nav-heading text-sm font-medium text-gray-900">General</h3>
+                        <a class="block mb-2 text-xs nav-dropdown-item" href="https://www.ezoic.com/ezoic-access-now/">Access Now</a>
+                        <a class="block mb-2 text-xs nav-dropdown-item" href="https://www.ezoic.com/advertisers/">Advertisers</a>
+                        <a class="block mb-2 text-xs nav-dropdown-item" href="https://www.ezoic.com/affiliate/">Affiliate Program</a>
+                        <a class="block mb-2 text-xs nav-dropdown-item" href="https://www.ezoic.com/ezoic-publishers/">Publisher Profiles</a>
+                      </div>
+                   </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+              
+                  
+                  <li class="relative group mr-16">
+                    <button class="inline-block text-left text-base font-medium text-white">
+                      <div class="flex items-center">
+                        <span class="mr-3">About</span>
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.332 0.999974L10.3887 0.0566406L6.66536 3.77997L5.9987 4.5L5.33203 3.77997L1.6087 0.0566402L0.665365 0.999974L5.9987 6.33331L11.332 0.999974Z" fill="currentColor"></path>
+                        </svg>
+                      </div>
+                    </button>
+
+                    <div class="hidden group-hover:block absolute z-20 bottom-0 left-0 w-52 pt-4 transform translate-y-full">
+                      <div class="py-4 px-6 bg-white rounded-lg border-2 border-blueGray-900">
+                        <div class="grid grid-cols-2 gap-4">
+                        <a class="block mb-2 text-xs" href="https://www.ezoic.com/about/">About Us</a>
+                        <a class="block mb-2 text-xs" href="https://www.ezoic.com/ezoic-cares-csr/">Ezoic Cares</a>
+                        <a class="block mb-2 text-xs" href="https://www.ezoic.com/ezoic-reviews/">Ezoic Reviews</a>
+                        <a class="block mb-2 text-xs" href="https://www.ezoic.com/pricing/">Pricing</a>
+                        <!-- Add more About links here -->
+                      </div>
+
+
+
+                    </div>
+                  </li>
+
+              
+               <button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white bg-white/0 px-3 py-2 rounded-md  hover:bg-white/20 hover:border-bg-white">
+        Login  
+        </button><li class="relative group mr-16"></li>
+     
+       
+        <button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 px-3 py-2 rounded  text-black bg-white border-2 border-ezgreen3/0 hover:text-black hover:bg-rainbowBg">
+        
+        Apply
+        <svg class="-ml-0.5 left-5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM6.75 9.25a.75.75 0 000 1.5h4.59l-2.1 1.95a.75.75 0 001.02 1.1l3.5-3.25a.75.75 0 000-1.1l-3.5-3.25a.75.75 0 10-1.02 1.1l2.1 1.95H6.75z" clip-rule="evenodd" /></svg>
+      </button>
+                
+            </ul>
+          </div

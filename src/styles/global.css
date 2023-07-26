@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --astro-code-color-text: #fff;
+  --astro-code-color-background: #212325;
+  --astro-code-token-constant: #ffffff80;
+  --astro-code-token-string: #FED2CE;
+  --astro-code-token-comment: #ffffff60;
+  --astro-code-token-keyword: #8B9FE8;
+  --astro-code-token-parameter: #E681D8;
+  --astro-code-token-function: #FFA9A4;
+  --astro-code-token-string-expression: #38bdf9 ;
+  --astro-code-token-punctuation: #FFA9A4;
+  --astro-code-token-link: #ffffff;
+}

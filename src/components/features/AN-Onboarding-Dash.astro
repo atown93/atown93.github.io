@@ -1,0 +1,146 @@
+<style>
+  .line-before-after {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .line-before,
+  .line-after {
+    width: 4px;
+  }
+
+  .line-before {
+    height: 150px;
+    margin-bottom: 20px;
+    background: linear-gradient(to top, rgba(113, 207, 37, 1), rgba(0, 0, 0, 1));
+  }
+
+  .line-after {
+    height: 150px;
+    margin-top: 30px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(113, 207, 37, 1));
+  }
+
+  .text-between-lines {
+    font-size: 30px;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<section class="py-24 lg:py-32 bg-black overflow-hidden">
+  <div class="container px-4 mx-auto">
+    <div class="flex flex-wrap -m-3">
+      <div class="w-full md:w-1/2 p-3">
+        <div class="group h-full overflow-hidden rounded-2xl">
+          <div class="text-white text-center mb-10 text-2xl">Stay informed throughout your onboarding journey<br>and receive valuable feedback.</div>
+
+          <section class="relative pt-20 pb-28 overflow-hidden">
+            <div class="relative z-10 container px-4 mx-auto">
+              <div class="md:max-w-4xl mx-auto">
+                <div class="mb-11 flex flex-wrap -m-1">
+                  <div class="w-full p-1">
+                    <div class="py-7 px-8 bg-gray-300 border-2 rounded-2xl shadow-10xl">
+                      <div class="flex flex-wrap justify-between -m-2">
+                        <div class="flex-1 p-2 text-center">
+                          <h3 class="mb-4 text-lg font-semibold leading-normal" contenteditable="false">Ad Manager Account Status: <span class="text-ezgreen1" contenteditable="false">Approved</span></h3>
+                          <p class="text-black font-medium" contenteditable="false">Your account has been approved by Google</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full p-1">
+                    
+                      <div class="py-8 px-10 bg-gray-300 border border-gray-200 hover:border-gray-300 rounded-2xl shadow-10xl">
+                        <div class="flex flex-wrap justify-between -m-2">
+                          <div class="p-2 text-center">
+                            <h3 class="text-lg font-semibold leading-normal" contenteditable="false">Ad Manager Domain Status: <span class="text-blue-500" contenteditable="false">In Progress</span><div><br></div><div><span style="font-weight: 400;">Waiting on Google to review your domain - this can take up to two weeks.</span></div><div><span style="font-weight: 400;">Your domain was submitted for review on 6/8/2023.&nbsp;</span></div></h3>
+                            <br>
+                            <div class="py-4 px-20 bg-white border border-gray-200 rounded-lg">
+                              <div class="flex justify-center">
+                                <div class="flex items-center">
+                                  <h4 class="mb-8 text-lg font-semibold">Feedback from Ezoic Onboarding Team</h4>
+                                </div>
+                              </div>
+                              <div class="toggle-details">
+                                <p class="text-black font-small">You have categories on the site that only have a couple articles in them. You should make categories have enough articles to justify it being a category (6+ categories).</p>
+                                <!-- Additional Text Here -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="w-full p-1">
+                    <a href="javascript:void(0)">
+                    </a>
+                  </div>
+                </div>
+                <p class="text-gray-00 text-center font-medium">
+                </p>
+              </div>
+            </div>
+          </section>
+
+      
+
+
+
+
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 p-3 flex flex-col justify-center items-center">
+        <div class="h-full rounded-2xl flex flex-col justify-center items-center">
+          <div class="line-before-after">
+            <div class="line-before"></div>
+            <p class="text-xl text-white text-center mt-8 mb-6">While you wait for approval,</p>
+            <img class="w-1/2 h-auto mx-auto rounded-2xl" src="public/images/placeholders/Slides_ANO_v1 (1).gif" alt="GIF">
+            <p class="text-xl text-white text-center mt-6">Complete your profile</p>
+            <div class="line-after"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Accordion functionality
+  const tabs = document.querySelectorAll('.tab');
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach((tab) => {
+        tab.classList.remove('active');
+      });
+      tab.classList.add('active');
+    });
+  });
+</script>

@@ -1,0 +1,118 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { frontmatter } = Astro.props;
+import { AstroSeo } from "@astrolib/seo";
+---
+
+<AstroSeo
+  title={frontmatter.title}
+  description={frontmatter.description}
+  canonical="https://www.lexingtonthemes.com"
+  openGraph={{
+    url: "https://www.lexingtonthemes.com",
+    title: "Title",
+    description: "description",
+    images: [
+      {
+        url: "https://www.lexingtonthemes.com/opengraph/social-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Social open graph",
+        type: "image/jpeg",
+      },
+      {
+        url: "https://www.lexingtonthemes.com/opengraph/twitter-og.jpg",
+        width: 4096,
+        height: 4096,
+        alt: "Twitter open graph",
+        type: "image/jpeg",
+      },
+      { url: "https://www.lexingtonthemes.com/opengraph/social-og.jpg" },
+      { url: "https://www.lexingtonthemes.com/opengraph/twitter-og.jpg" },
+    ],
+    site_name: "YourSitesName",
+  }}
+  twitter={{
+    handle: "@TwitterHandle",
+    site: "@site",
+    cardType: "summary_large_image",
+  }}
+/>
+<BaseLayout>
+  <section aria-labelledby="Blog-header-one">
+    <h2 class="sr-only" id="Blog-header-one">Blogheader one</h2>
+    <div
+      class="items-center px-4 mx-auto md:px-12 lg:px-8 xl:px-8 2xl:max-w-7xl py-24">
+      <div class="mx-auto text-center py-12">
+        <div>
+          <p
+            class="text-3xl font-black tracking-tight text-white uppercase italic max-w-3xl mx-auto font-display">
+            <span class="text-transparent bg-clip-text bg-rainbowBg px-2 block">
+              {frontmatter.title}:</span
+            >
+            {frontmatter.description}
+          </p>
+          <div
+            class="gap-3 items-end justify-between w-full mx-auto py-6 border-zinc-700 border-y mt-12 max-w-[40rem]">
+            <div class="text-center space-y-3">
+              <p class="text-zinc-400 text-sm">
+                By {frontmatter.author} on
+                <span>
+                  <time datetime={frontmatter.pubDate.toString().slice(0, 10)}
+                    >{frontmatter.pubDate.toString().slice(0, 10)}</time
+                  >
+                </span>
+              </p>
+
+              <div>
+                <span class="space-x-1">
+                  {
+                    frontmatter.tags.map((tag) => (
+                      <span class="inline-flex items-center text-xs font-medium text-zinc-400 underline hover:text-accent-300">
+                        <a href={`/tags/${tag}`}>{tag}</a>
+                      </span>
+                    ))
+                  }
+                </span>
+              </div>
+            </div>
+            <div class="flex justify-center mx-auto max-w-xl mt-6">
+              <span class="isolate inline-flex rounded-2xl">
+                <a
+                  href="#"
+                  type="button"
+                  class="relative transition duration-500 ease-in-out transform inline-flex items-center rounded-l-full border border-zinc-700 bg-dark px-4 py-2 text-xs font-light text-white hover:bg-metal focus:z-10 focus:border-sky-300 focus:outline-none focus:ring-1 focus:ring-sky-300"
+                  >Linkedin</a
+                >
+                <a
+                  href="#"
+                  type="button"
+                  class="relative transition duration-500 ease-in-out transform -ml-px inline-flex items-center border border-zinc-700 dark px-4 py-2 text-xs font-light text-white hover:bg-metal focus:z-10 focus:border-sky-300 focus:outline-none focus:ring-1 focus:ring-sky-300">
+                  Twitter
+                </a>
+                <a
+                  href="#"
+                  type="button"
+                  class="relative transition duration-500 ease-in-out transform -ml-px inline-flex items-center rounded-r-full border border-zinc-700 dark px-4 py-2 text-xs font-light text-white hover:bg-metal focus:z-10 focus:border-sky-300 focus:outline-none focus:ring-1 focus:ring-sky-300"
+                  >Facebook</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="mx-auto max-w-[40rem] prose text-zinc-400 prose-h3:text-white prose-a:font-semibold prose-a:text-sky-300 hover:prose-a:text-white prose-headings:text-white prose-img:rounded-3xl prose-blockquote:text-sky-400 prose-img:shadow-thick prose-code:text-sky-400 prose-strong:text-white prose-pre:rounded-2xl">
+          <img
+            class="mb-12"
+            src={frontmatter.image.url}
+            alt={frontmatter.image.alt}
+          />
+          <slot />
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

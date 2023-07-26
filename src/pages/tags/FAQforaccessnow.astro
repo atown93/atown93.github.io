@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+    
+    .accordion-button {
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: auto;
+      border: none;
+      text-align: left;
+      outline: none;
+      transition: background-color 0.2s ease;
+      display: flex;
+      align-items: center;
+      white-space: nowrap; /* Added to prevent line breaks */
+    }
+
+    .accordion-button:hover {
+      background-color: #000;
+    }
+
+    .accordion-panel {
+      padding: 0 18px;
+      background-color: black;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease;
+    }
+
+    .accordion-button.active {
+      background-color: #000;
+    }
+
+    .accordion-button svg {
+      margin-left: auto;
+      margin-right: 0;
+      transform: rotate(0deg);
+      transition: transform 0.2s ease;
+    }
+
+    .accordion-button.active svg {
+      transform: rotate(180deg);
+    }
+
+    .accordion {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .accordion-panel p {
+      color: #71CF25;
+      visibility: hidden; /* Hide the answer text initially */
+      font-size: 18px; /* Increase the font size for the answer text */
+    }
+
+    .accordion-button.active + .accordion-panel p {
+      visibility: visible; /* Show the answer text when the button is active */
+    }
+
+    .accordion-header {
+      font-size: 24px; /* Increase the font size for the header */
+      display: flex; /* Keep the header in the same line */
+      align-items: center;
+    }
+
+    .accordion-button,
+    .accordion-panel p {
+      font-size: 20px; /* Increase the font size for the questions */
+    }
+    
+  </style>
+</head>
+<body>
+        <section class="py-5 overflow-hidden bg-black">
+          <div class="container mx-auto px-4">
+            <div class="relative py-16 px-8 overflow-hidden rounded-3xl bg-black">
+              <div class="absolute top-0 left-1/2 min-w-max transform -translate-x-1/2">
+                <div class="w-full h-full"></div>
+              </div>
+              <div class="mb-10 md:max-w-xl mx-auto text-center">
+                <span class="inline-block mb-5 text-xl text-ezgreen1 font-bold uppercase tracking-widest">Frequently asked questions</span>
+              </div>
+              
+              <div class="max-w-3xl mx-auto">
+                <div class="flex flex-wrap -m-3 mb-10">
+                  <div class="p-3">
+                    <div class="accordion">
+                      <button class="accordion-button">
+                        What happens if I choose the Automatic setup?
+                        <svg class="h-8 w-8 text-ezgreen1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"/>
+                        </svg>
+                      </button>
+                      <div class="accordion-panel p-3">
+                        <p class="text-left">With Ezoic's new automatic setup option, you simply need to Cloud integrate your site and apply for Google Ad Manager. Once you've signed up, Ezoic will handle the rest for you!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full p-3">
+                    <div class="accordion">
+                      <button class="accordion-button">
+                        Is the Automatic setup available to all publishers?
+                        <svg class="h-8 w-8 text-ezgreen1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"/>
+                        </svg>
+                      </button>
+                      <div class="accordion-panel p-3">
+                        <p class="text-left">The Automatic setup option is available to all publishers, though you must Cloud integrate to utilize this setup path.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full p-3">
+                    <div class="accordion">
+                      <button class="accordion-button">
+                        Can I do the Automatic setup if I integrate via Ezoic's WordPress plugin?
+                        <svg class="h-8 w-8 text-ezgreen1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"/>
+                        </svg>
+                      </button>
+                      <div class="accordion-panel p-3">
+                        <p class="text-left">The Automatic setup is not available to sites that integrate via the WordPress plugin. Plugin integration requires you to use the manual setup process.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full p-3">
+                    <div class="accordion">
+                      <button class="accordion-button">
+                        Once I have integrated, how long will it take for Ezoic to finish the setup?
+                        <svg class="h-8 w-8 text-ezgreen1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"/>
+                        </svg>
+                      </button>
+                      <div class="accordion-panel p-3">
+                        <p class="text-left">Once you have integrated and signed up for Google Ad Manager, it will take Ezoic on average three days to complete the setup. Note: While Ezoic related setup steps will take around three days, Google approval (required for ad serving) unfortunately can take anywhere from 2-14 days.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full p-3">
+                    <div class="accordion">
+                      <button class="accordion-button">
+                        Do I still get access to support if I choose the Automatic setup?
+                        <svg class="h-8 w-8 text-ezgreen1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"/>
+                        </svg>
+                      </button>
+                      <div class="accordion-panel p-3">
+                        <p class="text-left">Yes, you still get access to support via <a href="https://community.ezoic.com/"> community.ezoic.com </a> if you choose the Automatic setup option.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+      
+            <script>
+              const accordionButtons = document.querySelectorAll('.accordion-button');
+      
+              accordionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                  button.classList.toggle('active');
+                  const panel = button.nextElementSibling;
+                  if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                  } else {
+                    panel.style.maxHeight = panel.scrollHeight + 'px';
+                  }
+                });
+              });
+            </script>
+          </body>
+          </html>
+      
+      
+      
+    
+      
+
+
+
+    

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .background-animate {
+      background: linear-gradient(110.1deg, rgb(34, 126, 34) 2.9%, rgb(168, 251, 60) 90.3%);
+      background-size: 200% 200%;
+      animation: gradientAnimation 10s linear infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .gradient-text {
+      background: linear-gradient(174deg, rgba(113,207,37,1) 0%, rgba(138,255,55,1) 73%, rgba(171,255,102,1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <section class="background-animate overflow-hidden" contenteditable="false">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-6" aria-label="Global">
+      <section aria-labelledby="feature-one">
+        <h2 class="sr-only" id="feature-one">Header</h2>
+        <div class="mx-auto 2xl:max-w-7xl lg:px-16 md:px-12 px-8 xl:px-36 items-center lg:pt-24 relative w-full">
+          <div class="lg:mx-auto lg:text-center">
+            <div class="mt-2">
+              <span class="text-black font-black italic px-2 uppercase tracking-tight  xl:text-8xl lg:text-6xl md:text-4xl sm:text-2xl">
+                Level 1:
+              </span>
+              <br>
+              <span class="text-black font-black italic tracking-tight uppercase xl:text-3xl">
+                <br>
+                Get automatically set up in just
+                <span class="text-white">
+                  5 minutes.
+                </span>
+              </span>
+              <br><br>
+              <h1 class="font-display inline-block text-lg tracking-tight text-black" style="font-weight: 600;">
+                Ezoic now offers a more automated setup process so you can get started faster.
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </nav>
+  </section>
+</body>
+</html>
