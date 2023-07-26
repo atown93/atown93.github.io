@@ -8,6 +8,7 @@ import mdx from "@astrojs/mdx"; // https://astro.build/config
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://atown93.github.io',
   markdown: {
     drafts: true,
     shikiConfig: {
@@ -19,7 +20,6 @@ export default defineConfig({
     skipInline: false,
     drafts: true
   },
-  site: 'https://atown93.github.io',
   integrations: [tailwind(), image(), compress(), sitemap(), mdx()],
 
 
