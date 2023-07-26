@@ -19,7 +19,7 @@ export default defineConfig({
     skipInline: false,
     drafts: true
   },
-  site: 'https://lexingtonthemes.com',
+  site: 'https://atown93.github.io',
   integrations: [tailwind(), image(), compress(), sitemap(), mdx()],
 
 
